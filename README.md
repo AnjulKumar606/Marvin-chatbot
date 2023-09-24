@@ -1,23 +1,90 @@
-# Marvin-chatbot
 # Marvin: Your Sarcasm-Infused Coding Companion
 
 ## Description
-Welcome to the world of Marvin, the chatbot with a twist of sarcasm and a love for all things coding! Marvin is your personal coding companion designed to make your programming journey not only informative but also incredibly entertaining. Whether you're a budding software student or an experienced coder, Marvin is here to add humor and wit to your coding conversations.
+Say Hi to Marvin, the chatbot with a twist of sarcasm and a love for all things coding! Marvin is your personal coding companion designed to make your programming journey not only informative but also incredibly entertaining. Whether you're a budding software student or an experienced coder, Marvin is here to add humor and wit to your coding conversations.
 
-## What Marvin Offers
-1. **Sarcasm with a Side of Code:** Marvin is not your ordinary chatbot. It excels at delivering sarcastic remarks and funny one-liners, making coding discussions feel like a stand-up comedy show in the tech world.
+## DEMO
 
-2. **Coding Challenges:** Feeling up for a challenge? Marvin can serve up coding puzzles and brain-teasers to keep your coding skills sharp and your spirits high.
 
-3. **Tech News with a Twist:** Stay updated on the latest tech trends and breakthroughs, served with Marvin's unique sense of humor. You'll laugh and learn at the same time!
+https://github.com/AnjulKumar606/Marvin-chatbot/assets/92917310/0377ab57-66d2-4a24-a709-e06f77742a49
 
-4. **Coding Tips and Wisdom:** Looking for coding advice? Marvin has tips, tricks, and wisdom to share, all sprinkled with a touch of humor and practicality.
+## Table of Contents
+- [Description](#description)
+- [Demo](#demo)
+- [What Marvin Does](#what-marvin-does)
+- [Tech Stacks Used](#tech-stacks-used)
+- [How to Run MARVIN](#how-to-run-marvin)
+- [How to Train Marvin on Your Database](#how-train-marvin-on-your-database)
 
-5. **Coding Celebrations:** Share your coding victories with Marvin, and it'll celebrate with you in style, whether you conquered a bug or completed a coding marathon.
 
-6. **Random Tech Thoughts:** Get ready for mind-blowing tech trivia and random tech facts that will leave you pondering and chuckling.
+## What Marvin Does
+**-**  **Casual Chats:** Marvin engages in relaxed conversations, making coding discussions enjoyable.
 
-## How to Interact
-Simply start a conversation with Marvin, and you'll instantly dive into a world of coding, laughter, and learning. Ask about coding challenges, seek coding advice, request a tech update, or simply engage in witty banter. Marvin is always ready for an entertaining chat.
+**-** **Coding Challenges:** It provides coding problems to help you practice and improve your coding skills.
 
-So, if you're ready for a coding adventure filled with laughter and tech brilliance, say hello to Marvin and let the coding fun begin!
+**-** **Tech Updates:** You'll stay informed about the latest tech news, with a touch of humor.
+
+**-** **Coding Advice:** Marvin offers practical tips and tricks to assist with coding challenges.
+
+**-** **Acknowledges Achievements:** It celebrates your coding successes, big or small.
+
+**-** **Tech Facts:** Marvin shares interesting tech facts to expand your knowledge.
+
+## Tech Stacks Used
+The following tech stacks used to create Marvin :
+- **NumPy:** Used for numerical operations and data handling.
+- **TensorFlow:** Empowers Marvin with machine learning capabilities for natural language processing.
+- **NLTK (Natural Language Toolkit):** Enhances Marvin's language understanding and text processing abilities.
+- **Pickle:** Utilized for saving and loading chatbot-related data, ensuring that your interactions with Marvin are always memorable.
+
+
+## How to Run MARVIN
+1. **Download this repo:** Simply download the files of this repo (Marvin is already trained with the data base present in the **`students.json`** )
+
+2. **RUN Chatbot.py:** Run **`Chatbot.py`** in the terminal
+
+3. **Interaction with Marvin** Simply start a conversation with Marvin, by typing in the terminal. Ask about coding challenges, seek coding advice, request a tech update, or simply engage in witty banter. 
+
+## How train Marvin on your Database
+1. **Insert Database:** insert a json file of structured as shown below and update the file name that is being used for the training in both the code of Chatbot.py and Training.py (make sure to name the objects properly)
+
+```json
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "Hey there!",
+                "Hello, software genius!",
+                "Well, well, look who's here!",
+            ],
+            "responses": [
+                "Hey! Ready for some code and sarcasm?",
+                "Hello, fellow code wrangler!",
+                "Well, aren't you the tech-savvy one!",
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": [
+                "Goodbye for now, chatbot!",
+                "Time to close the code editor.",
+                "Signing off for now!"
+            ],
+            "responses": [
+                "Farewell, coding maestro! Don't forget to save your work!",
+                "Catch you on the flip side, coding virtuoso!",
+                "See you soon, and remember, Ctrl+S is your friend!"
+            ]
+        }
+    ]
+}
+```
+
+2. **RUN Training.py:** Run **`Training.py`** in the terminal to train on the new database. You can also change the neural schema of the A.I. to your liking.
+
+3. **RUN Chatbot.py:** Run **`Chatbot.py`** in the terminal
+
+3. **Interaction with the newly trained model:** Simply start a conversation with it, by typing a conversation in the terminal.
+
+
